@@ -83,10 +83,6 @@ function draw() {
 
   background(0);
 
-  if (window.p3_drawBefore) {
-    window.p3_drawBefore();
-  }
-
   for (let y = 0; y < tile_rows; y++) {
     for (let x = 0; x < tile_columns; x++) {
       drawTile([x + world_offset.x, y + world_offset.y], [
